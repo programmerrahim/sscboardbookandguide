@@ -12,9 +12,9 @@ import android.widget.LinearLayout;
 
 import com.google.firebase.FirebaseApp;
 import com.ruksana.sscboardbookandguide.R;
-import com.ruksana.sscboardbookandguide.sc.ScBoardBookActivity;
-import com.ruksana.sscboardbookandguide.sc.ScGuideBookActivity;
-import com.ruksana.sscboardbookandguide.sc.ScHandNoteActivity;
+import com.ruksana.sscboardbookandguide.sciencegroup.physics.physicsBoardBookActivity;
+import com.ruksana.sscboardbookandguide.sciencegroup.physics.physicsGuideBookActivity;
+import com.ruksana.sscboardbookandguide.sciencegroup.physics.physicsHandNoteActivity;
 
 public class ScienceActivity extends AppCompatActivity {
 
