@@ -9,7 +9,7 @@
     android:padding="16dp"
     tools:context=".sciencegroup.ScienceActivity">
 
-    <!--    science Section start-->
+    <!--    physics Section start-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="S"
+                    android:text="P"
                     android:textColor="@color/black"
                     android:textSize="21sp"
                     android:textStyle="bold" />
@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="@string/science"
+                    android:text="@string/physics"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -169,6 +169,6 @@
 
     </LinearLayout>
 
-    <!--   science Section end-->
+    <!--   physics Section end-->
 
 </LinearLayout>
