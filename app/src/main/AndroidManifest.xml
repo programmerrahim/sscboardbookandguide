@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".artsgroup.ArtsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commercegroup.CommerceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sciencegroup.ScienceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsForQbankActivity"
+            android:exported="false" />
+        <activity
+            android:name=".banglasahitto.BanglaSahittoBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".banglasahitto.BanglaSahittoGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".banglasahitto.BanglaSahittoHandNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sohopath.SohopathBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sohopath.SohopathGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sohopath.SohopathHandNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bakoron.BakoronBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bakoron.BakoronGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bakoron.BakoronHandNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".english.EnglishBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".english.EnglishGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".english.EnglishHandNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".grammar.GrammarBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".grammar.GrammarGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".grammar.GrammarHandNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".math.MathBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".math.MathGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".math.MathHandNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ict.IctBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ict.IctGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ict.IctHandNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sc.ScBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sc.ScGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sc.ScHandNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_application_id" />
+    </application>
+
+</manifest>

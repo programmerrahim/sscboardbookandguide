@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SSC Board Book And Guide</string>
+    <string name="hand_note">হ্যান্ড নোট</string>
+    <string name="guide_book">গাইড বই</string>
+    <string name="board_book">বোর্ড বই</string>
+    <string name="sahitto">বাংলা সাহিত্য</string>
+    <string name="sohopath">বাংলা সহপাঠ</string>
+    <string name="bakoron">বাংলা ভাষার ব্যাকরণ ও নির্মিতি</string>
+    <string name="english">English For Today</string>
+    <string name="grammar">English Grammar and Composition</string>
+    <string name="math">গণিত</string>
+    <string name="ict">তথ্য ও যোগাযোগ প্রযুক্তি</string>
+    <string name="science_div">বিজ্ঞান বিভাগ</string>
+    <string name="commerce_div">ব্যবসায় শিক্ষা বিভাগ</string>
+    <string name="arts_div">মানবিক বিভাগ</string>
+    <string name="science">বিজ্ঞান</string>
+    <string name="p">B</string>
+    <string name="b">B</string>
+
+
+    <!--Admob test id-->
+    <string name="admob_application_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <!--Admob real id-->
+    <!--    <string name="admob_application_id">#</string>-->
+
+</resources>
