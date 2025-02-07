@@ -21,7 +21,7 @@
 
         <!-- Toggle Button with Vector Image -->
         <LinearLayout
-            android:id="@+id/sc_toggle_button"
+            android:id="@+id/physics_toggle_button"
             android:layout_width="match_parent"
             android:layout_height="84dp"
             android:layout_gravity="start"
@@ -78,7 +78,7 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/sc_toggle_icon"
+                    android:id="@+id/physics_toggle_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:src="@drawable/right_arrow" />
@@ -91,7 +91,7 @@
         <!-- Collapsible View -->
 
         <LinearLayout
-            android:id="@+id/sc_collapsible_view"
+            android:id="@+id/physics_collapsible_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -115,7 +115,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/sc_board_book_id"
+                        android:id="@+id/physics_board_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -133,7 +133,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/sc_guide_book_id"
+                        android:id="@+id/physics_guide_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -151,7 +151,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/sc_hand_note_id"
+                        android:id="@+id/physics_hand_note_id"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"

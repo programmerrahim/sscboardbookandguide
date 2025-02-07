@@ -29,26 +29,26 @@ public class ScienceActivity extends AppCompatActivity {
 
         actionBar();
 
-        scExpandableButtonSection();
-        scButtonSection();
+        physicsExpandableButtonSection();
+        physicsButtonSection();
     }
 
-    private void scExpandableButtonSection() {
-        LinearLayout scToggleButton = findViewById(R.id.sc_toggle_button);
-        LinearLayout scCollapsibleView = findViewById(R.id.sc_collapsible_view);
-        ImageView scToggleIcon = findViewById(R.id.sc_toggle_icon);
+    private void physicsExpandableButtonSection() {
+        LinearLayout physicsToggleButton = findViewById(R.id.physics_toggle_button);
+        LinearLayout physicsCollapsibleView = findViewById(R.id.physics_collapsible_view);
+        ImageView physicsToggleIcon = findViewById(R.id.physics_toggle_icon);
 
 
-        scToggleButton.setOnClickListener(new View.OnClickListener() {
+        physicsToggleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (isExpanded) {
-                    scCollapsibleView.setVisibility(View.GONE);
-                    scToggleIcon.setImageResource(R.drawable.right_arrow);
+                    physicsCollapsibleView.setVisibility(View.GONE);
+                    physicsToggleIcon.setImageResource(R.drawable.right_arrow);
 
                 } else {
-                    scCollapsibleView.setVisibility(View.VISIBLE);
-                    scToggleIcon.setImageResource(R.drawable.down_arrow);
+                    physicsCollapsibleView.setVisibility(View.VISIBLE);
+                    physicsToggleIcon.setImageResource(R.drawable.down_arrow);
 
                 }
                 isExpanded = !isExpanded;
@@ -56,28 +56,28 @@ public class ScienceActivity extends AppCompatActivity {
         });
     }
 
-    private void scButtonSection() {
-        Button scBoardBookButton = findViewById(R.id.sc_board_book_id);
-        scBoardBookButton.setOnClickListener(new View.OnClickListener() {
+    private void physicsButtonSection() {
+        Button physicsBoardBookButton = findViewById(R.id.physics_board_book_id);
+        physicsBoardBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ScienceActivity.this, ScBoardBookActivity.class));
+                startActivity(new Intent(ScienceActivity.this, physicsBoardBookActivity.class));
             }
         });
 
-        Button scGuideBookButton = findViewById(R.id.sc_guide_book_id);
-        scGuideBookButton.setOnClickListener(new View.OnClickListener() {
+        Button physicsGuideBookButton = findViewById(R.id.physics_guide_book_id);
+        physicsGuideBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ScienceActivity.this, ScGuideBookActivity.class));
+                startActivity(new Intent(ScienceActivity.this, physicsGuideBookActivity.class));
             }
         });
 
-        Button scHandNoteButton = findViewById(R.id.sc_hand_note_id);
-        scHandNoteButton.setOnClickListener(new View.OnClickListener() {
+        Button physicsHandNoteButton = findViewById(R.id.physics_hand_note_id);
+        physicsHandNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ScienceActivity.this, ScHandNoteActivity.class));
+                startActivity(new Intent(ScienceActivity.this, physicsHandNoteActivity.class));
             }
         });
     }

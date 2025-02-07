@@ -103,6 +103,16 @@
         <activity
             android:name=".sc.ScHandNoteActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".sciencegroup.physicsBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sciencegroup.physicsGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sciencegroup.physicsHandNoteActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

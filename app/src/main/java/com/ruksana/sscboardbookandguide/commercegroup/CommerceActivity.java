@@ -29,58 +29,58 @@ public class CommerceActivity extends AppCompatActivity {
 
         actionBar();
 
-        scExpandableButtonSection();
-        scButtonSection();
+//        scExpandableButtonSection();
+//        scButtonSection();
     }
 
-    private void scExpandableButtonSection() {
-        LinearLayout scToggleButton = findViewById(R.id.sc_toggle_button);
-        LinearLayout scCollapsibleView = findViewById(R.id.sc_collapsible_view);
-        ImageView scToggleIcon = findViewById(R.id.sc_toggle_icon);
-
-
-        scToggleButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isExpanded) {
-                    scCollapsibleView.setVisibility(View.GONE);
-                    scToggleIcon.setImageResource(R.drawable.right_arrow);
-
-                } else {
-                    scCollapsibleView.setVisibility(View.VISIBLE);
-                    scToggleIcon.setImageResource(R.drawable.down_arrow);
-
-                }
-                isExpanded = !isExpanded;
-            }
-        });
-    }
-
-    private void scButtonSection() {
-        Button scBoardBookButton = findViewById(R.id.sc_board_book_id);
-        scBoardBookButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, ScBoardBookActivity.class));
-            }
-        });
-
-        Button scGuideBookButton = findViewById(R.id.sc_guide_book_id);
-        scGuideBookButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, ScGuideBookActivity.class));
-            }
-        });
-
-        Button scHandNoteButton = findViewById(R.id.sc_hand_note_id);
-        scHandNoteButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, ScHandNoteActivity.class));
-            }
-        });
-    }
+//    private void scExpandableButtonSection() {
+//        LinearLayout scToggleButton = findViewById(R.id.sc_toggle_button);
+//        LinearLayout scCollapsibleView = findViewById(R.id.sc_collapsible_view);
+//        ImageView scToggleIcon = findViewById(R.id.sc_toggle_icon);
+//
+//
+//        scToggleButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (isExpanded) {
+//                    scCollapsibleView.setVisibility(View.GONE);
+//                    scToggleIcon.setImageResource(R.drawable.right_arrow);
+//
+//                } else {
+//                    scCollapsibleView.setVisibility(View.VISIBLE);
+//                    scToggleIcon.setImageResource(R.drawable.down_arrow);
+//
+//                }
+//                isExpanded = !isExpanded;
+//            }
+//        });
+//    }
+//
+//    private void scButtonSection() {
+//        Button scBoardBookButton = findViewById(R.id.sc_board_book_id);
+//        scBoardBookButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(CommerceActivity.this, ScBoardBookActivity.class));
+//            }
+//        });
+//
+//        Button scGuideBookButton = findViewById(R.id.sc_guide_book_id);
+//        scGuideBookButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(CommerceActivity.this, ScGuideBookActivity.class));
+//            }
+//        });
+//
+//        Button scHandNoteButton = findViewById(R.id.sc_hand_note_id);
+//        scHandNoteButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(CommerceActivity.this, ScHandNoteActivity.class));
+//            }
+//        });
+//    }
 
     //actionbar
     private void actionBar() {
