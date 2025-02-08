@@ -85,7 +85,7 @@ public class physicsBoardBookActivity extends AppCompatActivity {
         //int action bar
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
-        actionBar.setTitle("বিজ্ঞান - বোর্ড বই");
+        actionBar.setTitle("পদার্থবিজ্ঞান - বোর্ড বই");
 
 
         //add back button
