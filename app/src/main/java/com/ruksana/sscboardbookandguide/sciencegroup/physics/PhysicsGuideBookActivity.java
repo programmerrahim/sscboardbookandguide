@@ -21,7 +21,7 @@ import com.ruksana.sscboardbookandguide.R;
 
 import java.util.ArrayList;
 
-public class physicsGuideBookActivity extends AppCompatActivity {
+public class PhysicsGuideBookActivity extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
 
@@ -51,7 +51,7 @@ public class physicsGuideBookActivity extends AppCompatActivity {
 
 
         recview = findViewById(R.id.recview);
-        recview.setLayoutManager(new LinearLayoutManager(physicsGuideBookActivity.this));
+        recview.setLayoutManager(new LinearLayoutManager(PhysicsGuideBookActivity.this));
 
         db = FirebaseFirestore.getInstance();
 
@@ -85,7 +85,7 @@ public class physicsGuideBookActivity extends AppCompatActivity {
         //int action bar
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
-        actionBar.setTitle("বিজ্ঞান - গাইড বই");
+        actionBar.setTitle("পদার্থ বিজ্ঞান - গাইড বই");
 
 
         //add back button
@@ -101,7 +101,7 @@ public class physicsGuideBookActivity extends AppCompatActivity {
                 .document("guide_book")
                 .collection("item")
                 .orderBy("category", Query.Direction.ASCENDING)
-                .whereEqualTo("category", "scgbook")
+                .whereEqualTo("category", "pgbook")
                 .get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override

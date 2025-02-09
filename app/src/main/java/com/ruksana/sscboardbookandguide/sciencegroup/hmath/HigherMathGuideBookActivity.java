@@ -1,4 +1,4 @@
-package com.ruksana.sscboardbookandguide.sciencegroup.physics;
+package com.ruksana.sscboardbookandguide.sciencegroup.hmath;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -21,7 +21,7 @@ import com.ruksana.sscboardbookandguide.R;
 
 import java.util.ArrayList;
 
-public class physicsHandNoteActivity extends AppCompatActivity {
+public class HigherMathGuideBookActivity extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
 
@@ -51,7 +51,7 @@ public class physicsHandNoteActivity extends AppCompatActivity {
 
 
         recview = findViewById(R.id.recview);
-        recview.setLayoutManager(new LinearLayoutManager(physicsHandNoteActivity.this));
+        recview.setLayoutManager(new LinearLayoutManager(HigherMathGuideBookActivity.this));
 
         db = FirebaseFirestore.getInstance();
 
@@ -85,7 +85,7 @@ public class physicsHandNoteActivity extends AppCompatActivity {
         //int action bar
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
-        actionBar.setTitle("বিজ্ঞান - হ্যান্ড নোট");
+        actionBar.setTitle("উচ্চতর গণিত - গাইড বই");
 
 
         //add back button
@@ -98,10 +98,10 @@ public class physicsHandNoteActivity extends AppCompatActivity {
     private void loadData() {
         db = FirebaseFirestore.getInstance();
         db.collection("Data")
-                .document("hand_note")
+                .document("guide_book")
                 .collection("item")
                 .orderBy("category", Query.Direction.ASCENDING)
-                .whereEqualTo("category", "schnote")
+                .whereEqualTo("category", "hmathgbook")
                 .get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override

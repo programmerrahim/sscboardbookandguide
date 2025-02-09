@@ -105,14 +105,48 @@
             android:exported="false" />
 
         <activity
-            android:name=".sciencegroup.physics.physicsBoardBookActivity"
+            android:name=".sciencegroup.physics.PhysicsBoardBookActivity"
             android:exported="false" />
         <activity
-            android:name=".sciencegroup.physics.physicsGuideBookActivity"
+            android:name=".sciencegroup.physics.PhysicsGuideBookActivity"
             android:exported="false" />
         <activity
-            android:name=".sciencegroup.physics.physicsHandNoteActivity"
+            android:name=".sciencegroup.physics.PhysicsHandNoteActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".sciencegroup.chemistry.ChemistryBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sciencegroup.chemistry.ChemistryGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sciencegroup.chemistry.ChemistryHandNoteActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".sciencegroup.biology.BiologyBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sciencegroup.biology.BiologyGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sciencegroup.biology.BiologyHandNoteActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".sciencegroup.hmath.HigherMathBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sciencegroup.hmath.HigherMathGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sciencegroup.hmath.HigherMathHandNoteActivity"
+            android:exported="false" />
+
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -10,11 +10,22 @@
     <string name="grammar">English Grammar and Composition</string>
     <string name="math">গণিত</string>
     <string name="ict">তথ্য ও যোগাযোগ প্রযুক্তি</string>
+    <string name="islam">ইসলাম শিক্ষা</string>
     <string name="science_div">বিজ্ঞান বিভাগ</string>
     <string name="commerce_div">ব্যবসায় শিক্ষা বিভাগ</string>
     <string name="arts_div">মানবিক বিভাগ</string>
     <string name="science">বিজ্ঞান</string>
     <string name="physics">পদার্থ বিজ্ঞান</string>
+    <string name="civics">পৌরনীতি ও নাগরিকতা</string>
+    <string name="accounting">হিসাববিজ্ঞান</string>
+    <string name="finance">ফিন্যান্স ও ব্যাংকিং</string>
+    <string name="business">ব্যবসায় উদ্যোগ</string>
+    <string name="chemistry">রসায়ন</string>
+    <string name="economics">অর্থনীতি</string>
+    <string name="biology">জীববিজ্ঞান</string>
+    <string name="geography">ভূগোল ও পরিবেশ</string>
+    <string name="hmath">উচ্চতর গণিত</string>
+    <string name="history">বাংলাদেশের ইতিহাস ও বিশ্বসভ্যতা</string>
     <string name="p">B</string>
     <string name="b">B</string>
 

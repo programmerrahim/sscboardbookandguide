@@ -7,9 +7,9 @@
     android:background="@color/off_green"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".sciencegroup.ScienceActivity">
+    tools:context=".commercegroup.CommerceActivity">
 
-    <!--    physics Section start-->
+    <!--    accounting Section start-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
 
         <!-- Toggle Button with Vector Image -->
         <LinearLayout
-            android:id="@+id/physics_toggle_button"
+            android:id="@+id/accounting_toggle_button"
             android:layout_width="match_parent"
             android:layout_height="84dp"
             android:layout_gravity="start"
@@ -46,7 +46,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="P"
+                    android:text="A"
                     android:textColor="@color/black"
                     android:textSize="21sp"
                     android:textStyle="bold" />
@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="@string/physics"
+                    android:text="@string/accounting"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -78,7 +78,7 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/physics_toggle_icon"
+                    android:id="@+id/accounting_toggle_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:src="@drawable/right_arrow" />
@@ -91,7 +91,7 @@
         <!-- Collapsible View -->
 
         <LinearLayout
-            android:id="@+id/physics_collapsible_view"
+            android:id="@+id/accounting_collapsible_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -115,7 +115,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/physics_board_book_id"
+                        android:id="@+id/accounting_board_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -133,7 +133,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/physics_guide_book_id"
+                        android:id="@+id/accounting_guide_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -151,7 +151,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/physics_hand_note_id"
+                        android:id="@+id/accounting_hand_note_id"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -169,9 +169,9 @@
 
     </LinearLayout>
 
-    <!--   physics Section end-->
+    <!--   accounting Section end-->
 
-    <!--    chemistry Section start-->
+    <!--    finance Section start-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -183,7 +183,7 @@
 
         <!-- Toggle Button with Vector Image -->
         <LinearLayout
-            android:id="@+id/chemistry_toggle_button"
+            android:id="@+id/finance_toggle_button"
             android:layout_width="match_parent"
             android:layout_height="84dp"
             android:layout_gravity="start"
@@ -208,7 +208,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="C"
+                    android:text="F"
                     android:textColor="@color/black"
                     android:textSize="21sp"
                     android:textStyle="bold" />
@@ -226,7 +226,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="@string/chemistry"
+                    android:text="@string/finance"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -240,7 +240,7 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/chemistry_toggle_icon"
+                    android:id="@+id/finance_toggle_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:src="@drawable/right_arrow" />
@@ -253,7 +253,7 @@
         <!-- Collapsible View -->
 
         <LinearLayout
-            android:id="@+id/chemistry_collapsible_view"
+            android:id="@+id/finance_collapsible_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -277,7 +277,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/chemistry_board_book_id"
+                        android:id="@+id/finance_board_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -295,7 +295,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/chemistry_guide_book_id"
+                        android:id="@+id/finance_guide_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -313,7 +313,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/chemistry_hand_note_id"
+                        android:id="@+id/finance_hand_note_id"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -331,9 +331,9 @@
 
     </LinearLayout>
 
-    <!--   chemistry Section end-->
+    <!--   finance Section end-->
 
-    <!--    biology Section start-->
+    <!--    business Section start-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -345,7 +345,7 @@
 
         <!-- Toggle Button with Vector Image -->
         <LinearLayout
-            android:id="@+id/biology_toggle_button"
+            android:id="@+id/business_toggle_button"
             android:layout_width="match_parent"
             android:layout_height="84dp"
             android:layout_gravity="start"
@@ -388,7 +388,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="@string/biology"
+                    android:text="@string/business"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -402,7 +402,7 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/biology_toggle_icon"
+                    android:id="@+id/business_toggle_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:src="@drawable/right_arrow" />
@@ -415,7 +415,7 @@
         <!-- Collapsible View -->
 
         <LinearLayout
-            android:id="@+id/biology_collapsible_view"
+            android:id="@+id/business_collapsible_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -439,7 +439,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/biology_board_book_id"
+                        android:id="@+id/business_board_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -457,7 +457,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/biology_guide_book_id"
+                        android:id="@+id/business_guide_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -475,7 +475,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/biology_hand_note_id"
+                        android:id="@+id/business_hand_note_id"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -493,9 +493,9 @@
 
     </LinearLayout>
 
-    <!--   biology Section end-->
+    <!--   business Section end-->
 
-    <!--    higher math Section start-->
+    <!--    science math Section start-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -507,7 +507,7 @@
 
         <!-- Toggle Button with Vector Image -->
         <LinearLayout
-            android:id="@+id/hmath_toggle_button"
+            android:id="@+id/science_toggle_button"
             android:layout_width="match_parent"
             android:layout_height="84dp"
             android:layout_gravity="start"
@@ -532,7 +532,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="M"
+                    android:text="S"
                     android:textColor="@color/black"
                     android:textSize="21sp"
                     android:textStyle="bold" />
@@ -550,7 +550,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="@string/hmath"
+                    android:text="@string/science"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -564,7 +564,7 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/hmath_toggle_icon"
+                    android:id="@+id/science_toggle_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:src="@drawable/right_arrow" />
@@ -577,7 +577,7 @@
         <!-- Collapsible View -->
 
         <LinearLayout
-            android:id="@+id/hmath_collapsible_view"
+            android:id="@+id/science_collapsible_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -601,7 +601,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/hmath_board_book_id"
+                        android:id="@+id/science_board_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -619,7 +619,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/hmath_guide_book_id"
+                        android:id="@+id/science_guide_book_id"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
@@ -637,7 +637,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/hmath_hand_note_id"
+                        android:id="@+id/science_hand_note_id"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:background="@drawable/background_gradiant"
