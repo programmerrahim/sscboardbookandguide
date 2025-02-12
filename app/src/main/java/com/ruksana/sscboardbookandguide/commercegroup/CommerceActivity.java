@@ -12,6 +12,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.FirebaseApp;
 import com.ruksana.sscboardbookandguide.R;
+import com.ruksana.sscboardbookandguide.commercegroup.accounting.AccountingBoardBookActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.accounting.AccountingGuideBookActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.accounting.AccountingHandNoteActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.business.BusinessBoardBookActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.business.BusinessGuideBookActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.business.BusinessHandNoteActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.finance.FinanceBoardBookActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.finance.FinanceGuideBookActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.finance.FinanceHandNoteActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.sc.ScBoardBookActivity;
+import com.ruksana.sscboardbookandguide.commercegroup.sc.ScGuideBookActivity;
 import com.ruksana.sscboardbookandguide.sciencegroup.ScienceActivity;
 import com.ruksana.sscboardbookandguide.sciencegroup.biology.BiologyBoardBookActivity;
 import com.ruksana.sscboardbookandguide.sciencegroup.biology.BiologyGuideBookActivity;
@@ -107,7 +118,7 @@ public class CommerceActivity extends AppCompatActivity {
         accountingBoardBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, PhysicsBoardBookActivity.class));
+                startActivity(new Intent(CommerceActivity.this, AccountingBoardBookActivity.class));
             }
         });
 
@@ -115,7 +126,7 @@ public class CommerceActivity extends AppCompatActivity {
         accountingGuideBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, PhysicsGuideBookActivity.class));
+                startActivity(new Intent(CommerceActivity.this, AccountingGuideBookActivity.class));
             }
         });
 
@@ -123,7 +134,7 @@ public class CommerceActivity extends AppCompatActivity {
         accountingHandNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, PhysicsHandNoteActivity.class));
+                startActivity(new Intent(CommerceActivity.this, AccountingHandNoteActivity.class));
             }
         });
     }
@@ -156,7 +167,7 @@ public class CommerceActivity extends AppCompatActivity {
         financeBoardBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, ChemistryBoardBookActivity.class));
+                startActivity(new Intent(CommerceActivity.this, FinanceBoardBookActivity.class));
             }
         });
 
@@ -164,7 +175,7 @@ public class CommerceActivity extends AppCompatActivity {
         financeGuideBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, ChemistryGuideBookActivity.class));
+                startActivity(new Intent(CommerceActivity.this, FinanceGuideBookActivity.class));
             }
         });
 
@@ -172,7 +183,7 @@ public class CommerceActivity extends AppCompatActivity {
         financeHandNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, ChemistryHandNoteActivity.class));
+                startActivity(new Intent(CommerceActivity.this, FinanceHandNoteActivity.class));
             }
         });
     }
@@ -205,7 +216,7 @@ public class CommerceActivity extends AppCompatActivity {
         businessBoardBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, BiologyBoardBookActivity.class));
+                startActivity(new Intent(CommerceActivity.this, BusinessBoardBookActivity.class));
             }
         });
 
@@ -213,7 +224,7 @@ public class CommerceActivity extends AppCompatActivity {
         businessGuideBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, BiologyGuideBookActivity.class));
+                startActivity(new Intent(CommerceActivity.this, BusinessGuideBookActivity.class));
             }
         });
 
@@ -221,7 +232,7 @@ public class CommerceActivity extends AppCompatActivity {
         businessHandNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, BiologyHandNoteActivity.class));
+                startActivity(new Intent(CommerceActivity.this, BusinessHandNoteActivity.class));
             }
         });
     }
@@ -254,7 +265,7 @@ public class CommerceActivity extends AppCompatActivity {
         scienceBoardBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, HigherMathBoardBookActivity.class));
+                startActivity(new Intent(CommerceActivity.this, ScBoardBookActivity.class));
             }
         });
 
@@ -262,7 +273,7 @@ public class CommerceActivity extends AppCompatActivity {
         scienceGuideBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, HigherMathGuideBookActivity.class));
+                startActivity(new Intent(CommerceActivity.this, ScGuideBookActivity.class));
             }
         });
 
@@ -270,7 +281,7 @@ public class CommerceActivity extends AppCompatActivity {
         scienceHandNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CommerceActivity.this, HigherMathHandNoteActivity.class));
+                startActivity(new Intent(CommerceActivity.this, ScGuideBookActivity.class));
             }
         });
     }

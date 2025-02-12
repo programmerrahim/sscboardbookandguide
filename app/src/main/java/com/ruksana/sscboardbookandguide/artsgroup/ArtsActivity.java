@@ -12,6 +12,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.FirebaseApp;
 import com.ruksana.sscboardbookandguide.R;
+import com.ruksana.sscboardbookandguide.artsgroup.civics.CivicsBoardBookActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.civics.CivicsGuideBookActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.civics.CivicsHandNoteActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.economics.EconomicsBoardBookActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.economics.EconomicsGuideBookActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.economics.EconomicsHandNoteActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.geography.GeographyBoardBookActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.geography.GeographyGuideBookActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.geography.GeographyHandNoteActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.history.HistoryBoardBookActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.history.HistoryGuideBookActivity;
+import com.ruksana.sscboardbookandguide.artsgroup.history.HistoryHandNoteActivity;
 import com.ruksana.sscboardbookandguide.sciencegroup.ScienceActivity;
 import com.ruksana.sscboardbookandguide.sciencegroup.biology.BiologyBoardBookActivity;
 import com.ruksana.sscboardbookandguide.sciencegroup.biology.BiologyGuideBookActivity;
@@ -105,7 +117,7 @@ public class ArtsActivity extends AppCompatActivity {
         civicsBoardBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, PhysicsBoardBookActivity.class));
+                startActivity(new Intent(ArtsActivity.this, CivicsBoardBookActivity.class));
             }
         });
 
@@ -113,7 +125,7 @@ public class ArtsActivity extends AppCompatActivity {
         civicsGuideBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, PhysicsGuideBookActivity.class));
+                startActivity(new Intent(ArtsActivity.this, CivicsGuideBookActivity.class));
             }
         });
 
@@ -121,7 +133,7 @@ public class ArtsActivity extends AppCompatActivity {
         civicsHandNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, PhysicsHandNoteActivity.class));
+                startActivity(new Intent(ArtsActivity.this, CivicsHandNoteActivity.class));
             }
         });
     }
@@ -154,7 +166,7 @@ public class ArtsActivity extends AppCompatActivity {
         economicsBoardBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, ChemistryBoardBookActivity.class));
+                startActivity(new Intent(ArtsActivity.this, EconomicsBoardBookActivity.class));
             }
         });
 
@@ -162,7 +174,7 @@ public class ArtsActivity extends AppCompatActivity {
         economicsGuideBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, ChemistryGuideBookActivity.class));
+                startActivity(new Intent(ArtsActivity.this, EconomicsGuideBookActivity.class));
             }
         });
 
@@ -170,7 +182,7 @@ public class ArtsActivity extends AppCompatActivity {
         economicsHandNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, ChemistryHandNoteActivity.class));
+                startActivity(new Intent(ArtsActivity.this, EconomicsHandNoteActivity.class));
             }
         });
     }
@@ -203,7 +215,7 @@ public class ArtsActivity extends AppCompatActivity {
         geographyBoardBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, BiologyBoardBookActivity.class));
+                startActivity(new Intent(ArtsActivity.this, GeographyBoardBookActivity.class));
             }
         });
 
@@ -211,7 +223,7 @@ public class ArtsActivity extends AppCompatActivity {
         geographyGuideBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, BiologyGuideBookActivity.class));
+                startActivity(new Intent(ArtsActivity.this, GeographyGuideBookActivity.class));
             }
         });
 
@@ -219,7 +231,7 @@ public class ArtsActivity extends AppCompatActivity {
         geographyHandNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, BiologyHandNoteActivity.class));
+                startActivity(new Intent(ArtsActivity.this, GeographyHandNoteActivity.class));
             }
         });
     }
@@ -252,7 +264,7 @@ public class ArtsActivity extends AppCompatActivity {
         historyBoardBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, HigherMathBoardBookActivity.class));
+                startActivity(new Intent(ArtsActivity.this, HistoryBoardBookActivity.class));
             }
         });
 
@@ -260,7 +272,7 @@ public class ArtsActivity extends AppCompatActivity {
         historyGuideBookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, HigherMathGuideBookActivity.class));
+                startActivity(new Intent(ArtsActivity.this, HistoryGuideBookActivity.class));
             }
         });
 
@@ -268,7 +280,7 @@ public class ArtsActivity extends AppCompatActivity {
         historyHandNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ArtsActivity.this, HigherMathHandNoteActivity.class));
+                startActivity(new Intent(ArtsActivity.this, HistoryHandNoteActivity.class));
             }
         });
     }

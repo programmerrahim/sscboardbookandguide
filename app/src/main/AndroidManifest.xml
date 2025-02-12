@@ -94,14 +94,36 @@
         <activity
             android:name=".ict.IctHandNoteActivity"
             android:exported="false" />
+
         <activity
-            android:name=".sc.ScBoardBookActivity"
+            android:name=".islam.IslamBoardBookActivity"
             android:exported="false" />
         <activity
-            android:name=".sc.ScGuideBookActivity"
+            android:name=".islam.IslamGuideBookActivity"
             android:exported="false" />
         <activity
-            android:name=".sc.ScHandNoteActivity"
+            android:name=".islam.IslamHandNoteActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".hindu.HinduBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hindu.HinduGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hindu.HinduHandNoteActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".commercegroup.sc.ScBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commercegroup.sc.ScGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commercegroup.sc.ScHandNoteActivity"
             android:exported="false" />
 
         <activity
@@ -143,6 +165,86 @@
             android:exported="false" />
         <activity
             android:name=".sciencegroup.hmath.HigherMathHandNoteActivity"
+            android:exported="false" />
+
+
+
+        <activity
+            android:name=".commercegroup.accounting.AccountingBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commercegroup.accounting.AccountingGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commercegroup.accounting.AccountingHandNoteActivity"
+            android:exported="false" />
+
+
+
+        <activity
+            android:name=".commercegroup.finance.FinanceBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commercegroup.finance.FinanceGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commercegroup.finance.FinanceHandNoteActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".commercegroup.business.BusinessBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commercegroup.business.BusinessGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commercegroup.business.BusinessHandNoteActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".artsgroup.civics.CivicsBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".artsgroup.civics.CivicsGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".artsgroup.civics.CivicsHandNoteActivity"
+            android:exported="false" />
+
+
+
+        <activity
+            android:name=".artsgroup.economics.EconomicsBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".artsgroup.economics.EconomicsGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".artsgroup.economics.EconomicsHandNoteActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".artsgroup.geography.GeographyBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".artsgroup.geography.GeographyGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".artsgroup.geography.GeographyHandNoteActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".artsgroup.history.HistoryBoardBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".artsgroup.history.HistoryGuideBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".artsgroup.history.HistoryHandNoteActivity"
             android:exported="false" />
 
 

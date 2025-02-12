@@ -33,7 +33,7 @@ import java.io.File;
 public class DetailsForQbankActivity extends AppCompatActivity {
 
 
-    String pdfUrl, title, pageNumber, linkText;
+    String pdfUrl, title, pageNumber;
 
 //    private ProgressDialog progressDialog;
 
@@ -67,17 +67,7 @@ public class DetailsForQbankActivity extends AppCompatActivity {
     private EditText searchEditText;
     private ImageView searchButton;
 
-//    int startPage ; // Start at page 2
-//    int endPage ; // End at page 10
-//
-//    int[] pageIndices;
 
-//    private String GAME_ID = "YOUR_GAME_ID"; // Replace with your Unity Game ID
-//    private boolean TEST_MODE = true; // Set to false in production
-
-    private String GAME_ID = "1234567"; // Replace with Unity Game ID
-    private String INTERSTITIAL_AD_ID = "Interstitial_Android"; // Replace with Ad Unit ID
-    private boolean TEST_MODE = true; // Enable for testing
 
 
     @Override
@@ -101,8 +91,7 @@ public class DetailsForQbankActivity extends AppCompatActivity {
         pdfUrl = getIntent().getStringExtra("data");
         title = getIntent().getStringExtra("title");
         pageNumber = getIntent().getStringExtra("pageNumber");
-        // linkText = getIntent().getStringExtra("linkText");
-//        pageNumber = getIntent().getStringExtra("pageNumber");
+
         actionBar.setTitle(title);
 
 
@@ -113,13 +102,10 @@ public class DetailsForQbankActivity extends AppCompatActivity {
 
         soundSwitch = findViewById(R.id.soundSwitch);
         nightModeSwitch = findViewById(R.id.nightSwitch);
-//        detailsLinkText = findViewById(R.id.detailsLinkTextId);
 
-
-//        searchBar = findViewById(R.id.searchBar);
         searchButton = findViewById(R.id.searchButton);
 
-//        searchBar.setHint("পৃষ্ঠা নং লিখুন..");
+
 
 
         // Search functionality
@@ -170,26 +156,7 @@ public class DetailsForQbankActivity extends AppCompatActivity {
         });
 
 
-//        detailsLinkText.setText(linkText);
 
-
-//        // Initialize the SDK:
-//        UnityAds.initialize(getApplicationContext(), unityGameID, testMode, new IUnityAdsInitializationListener() {
-//            @Override
-//            public void onInitializationComplete() {
-//
-//            }
-//
-//            @Override
-//            public void onInitializationFailed(UnityAds.UnityAdsInitializationError error, String message) {
-//
-//            }
-//        });
-//
-//
-//        loadInt();
-
-//        UnityAds.initialize(this, GAME_ID, TEST_MODE);
 
 
     }//End On create
@@ -406,20 +373,7 @@ public class DetailsForQbankActivity extends AppCompatActivity {
         }
     }
 
-//    public void loadInt() {
-//        UnityAds.load(inter_ads_id, new IUnityAdsLoadListener() {
-//            @Override
-//            public void onUnityAdsAdLoaded(String placementId) {
-//
-//            }
-//
-//            @Override
-//            public void onUnityAdsFailedToLoad(String placementId, UnityAds.UnityAdsLoadError error, String message) {
-//                Toast.makeText(DetailsForQbankActivity.this, "Error!", Toast.LENGTH_SHORT).show();
-//
-//            }
-//        });
-//    }
+
 
 
 }

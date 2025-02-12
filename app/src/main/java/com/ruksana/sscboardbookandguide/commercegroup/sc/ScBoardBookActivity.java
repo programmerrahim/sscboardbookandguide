@@ -1,4 +1,4 @@
-package com.ruksana.sscboardbookandguide.sc;
+package com.ruksana.sscboardbookandguide.commercegroup.sc;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -21,7 +21,7 @@ import com.ruksana.sscboardbookandguide.R;
 
 import java.util.ArrayList;
 
-public class ScGuideBookActivity extends AppCompatActivity {
+public class ScBoardBookActivity extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
 
@@ -32,7 +32,7 @@ public class ScGuideBookActivity extends AppCompatActivity {
     ArrayList<Model_Firestore_Database> datalist;
     FirebaseFirestore db;
 
-    com.ruksana.adapter.adapter adapter;
+    adapter adapter;
 
 
     @Override
@@ -51,7 +51,7 @@ public class ScGuideBookActivity extends AppCompatActivity {
 
 
         recview = findViewById(R.id.recview);
-        recview.setLayoutManager(new LinearLayoutManager(ScGuideBookActivity.this));
+        recview.setLayoutManager(new LinearLayoutManager(ScBoardBookActivity.this));
 
         db = FirebaseFirestore.getInstance();
 
@@ -85,7 +85,7 @@ public class ScGuideBookActivity extends AppCompatActivity {
         //int action bar
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
-        actionBar.setTitle("বিজ্ঞান - গাইড বই");
+        actionBar.setTitle("বিজ্ঞান - বোর্ড বই");
 
 
         //add back button
@@ -98,10 +98,10 @@ public class ScGuideBookActivity extends AppCompatActivity {
     private void loadData() {
         db = FirebaseFirestore.getInstance();
         db.collection("Data")
-                .document("guide_book")
+                .document("board_book")
                 .collection("item")
                 .orderBy("category", Query.Direction.ASCENDING)
-                .whereEqualTo("category", "scgbook")
+                .whereEqualTo("category", "scbbook")
                 .get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override

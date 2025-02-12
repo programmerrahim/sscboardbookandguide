@@ -25,9 +25,15 @@ import com.ruksana.sscboardbookandguide.english.EnglishHandNoteActivity;
 import com.ruksana.sscboardbookandguide.grammar.GrammarBoardBookActivity;
 import com.ruksana.sscboardbookandguide.grammar.GrammarGuideBookActivity;
 import com.ruksana.sscboardbookandguide.grammar.GrammarHandNoteActivity;
+import com.ruksana.sscboardbookandguide.hindu.HinduBoardBookActivity;
+import com.ruksana.sscboardbookandguide.hindu.HinduGuideBookActivity;
+import com.ruksana.sscboardbookandguide.hindu.HinduHandNoteActivity;
 import com.ruksana.sscboardbookandguide.ict.IctBoardBookActivity;
 import com.ruksana.sscboardbookandguide.ict.IctGuideBookActivity;
 import com.ruksana.sscboardbookandguide.ict.IctHandNoteActivity;
+import com.ruksana.sscboardbookandguide.islam.IslamBoardBookActivity;
+import com.ruksana.sscboardbookandguide.islam.IslamGuideBookActivity;
+import com.ruksana.sscboardbookandguide.islam.IslamHandNoteActivity;
 import com.ruksana.sscboardbookandguide.math.MathBoardBookActivity;
 import com.ruksana.sscboardbookandguide.math.MathGuideBookActivity;
 import com.ruksana.sscboardbookandguide.math.MathHandNoteActivity;
@@ -73,6 +79,13 @@ public class MainActivity extends AppCompatActivity {
 
         ictExpandableButtonSection();
         ictButtonSection();
+
+        islamExpandableButtonSection();
+        islamButtonSection();
+
+
+        hinduExpandableButtonSection();
+        hinduButtonSection();
 
 
         scienceDivButtonSection();
@@ -427,6 +440,110 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
+    private void islamExpandableButtonSection() {
+        LinearLayout islamToggleButton = findViewById(R.id.islam_toggle_button);
+        LinearLayout islamCollapsibleView = findViewById(R.id.islam_collapsible_view);
+        ImageView islamToggleIcon = findViewById(R.id.islam_toggle_icon);
+
+
+        islamToggleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isExpanded) {
+                    islamCollapsibleView.setVisibility(View.GONE);
+                    islamToggleIcon.setImageResource(R.drawable.right_arrow);
+
+                } else {
+                    islamCollapsibleView.setVisibility(View.VISIBLE);
+                    islamToggleIcon.setImageResource(R.drawable.down_arrow);
+
+                }
+                isExpanded = !isExpanded;
+            }
+        });
+    }
+
+    private void islamButtonSection() {
+        Button islamBoardBookButton = findViewById(R.id.islam_board_book_id);
+        islamBoardBookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, IslamBoardBookActivity.class));
+            }
+        });
+
+        Button islamGuideBookButton = findViewById(R.id.islam_guide_book_id);
+        islamGuideBookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, IslamGuideBookActivity.class));
+            }
+        });
+
+        Button islamHandNoteButton = findViewById(R.id.islam_hand_note_id);
+        islamHandNoteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, IslamHandNoteActivity.class));
+            }
+        });
+    }
+
+
+    private void hinduExpandableButtonSection() {
+        LinearLayout hinduToggleButton = findViewById(R.id.hindu_toggle_button);
+        LinearLayout hinduCollapsibleView = findViewById(R.id.hindu_collapsible_view);
+        ImageView hinduToggleIcon = findViewById(R.id.hindu_toggle_icon);
+
+
+        hinduToggleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isExpanded) {
+                    hinduCollapsibleView.setVisibility(View.GONE);
+                    hinduToggleIcon.setImageResource(R.drawable.right_arrow);
+
+                } else {
+                    hinduCollapsibleView.setVisibility(View.VISIBLE);
+                    hinduToggleIcon.setImageResource(R.drawable.down_arrow);
+
+                }
+                isExpanded = !isExpanded;
+            }
+        });
+    }
+
+    private void hinduButtonSection() {
+        Button hinduBoardBookButton = findViewById(R.id.hindu_board_book_id);
+        hinduBoardBookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, HinduBoardBookActivity.class));
+            }
+        });
+
+        Button hinduGuideBookButton = findViewById(R.id.hindu_guide_book_id);
+        hinduGuideBookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, HinduGuideBookActivity.class));
+            }
+        });
+
+        Button hinduHandNoteButton = findViewById(R.id.hindu_hand_note_id);
+        hinduHandNoteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, HinduHandNoteActivity.class));
+            }
+        });
+    }
+
+
+
 
     private void scienceDivButtonSection() {
         LinearLayout scienceDivBoardBookButton = findViewById(R.id.science_div_toggle_button);
