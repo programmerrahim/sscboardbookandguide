@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -17,251 +18,39 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-        <activity
-            android:name=".artsgroup.ArtsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".commercegroup.CommerceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sciencegroup.ScienceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailsForQbankActivity"
-            android:exported="false" />
-        <activity
-            android:name=".banglasahitto.BanglaSahittoBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".banglasahitto.BanglaSahittoGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".banglasahitto.BanglaSahittoHandNoteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sohopath.SohopathBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sohopath.SohopathGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sohopath.SohopathHandNoteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".bakoron.BakoronBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".bakoron.BakoronGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".bakoron.BakoronHandNoteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".english.EnglishBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".english.EnglishGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".english.EnglishHandNoteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".grammar.GrammarBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".grammar.GrammarGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".grammar.GrammarHandNoteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".math.MathBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".math.MathGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".math.MathHandNoteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ict.IctBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ict.IctGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ict.IctHandNoteActivity"
-            android:exported="false" />
 
+        <!-- Splash Activity (Launcher) -->
         <activity
-            android:name=".islam.IslamBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".islam.IslamGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".islam.IslamHandNoteActivity"
-            android:exported="false" />
-
-
-        <activity
-            android:name=".hindu.HinduBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".hindu.HinduGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".hindu.HinduHandNoteActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".commercegroup.sc.ScBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".commercegroup.sc.ScGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".commercegroup.sc.ScHandNoteActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".sciencegroup.physics.PhysicsBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sciencegroup.physics.PhysicsGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sciencegroup.physics.PhysicsHandNoteActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".sciencegroup.chemistry.ChemistryBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sciencegroup.chemistry.ChemistryGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sciencegroup.chemistry.ChemistryHandNoteActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".sciencegroup.biology.BiologyBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sciencegroup.biology.BiologyGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sciencegroup.biology.BiologyHandNoteActivity"
-            android:exported="false" />
-
-
-        <activity
-            android:name=".sciencegroup.hmath.HigherMathBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sciencegroup.hmath.HigherMathGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sciencegroup.hmath.HigherMathHandNoteActivity"
-            android:exported="false" />
-
-
-
-        <activity
-            android:name=".commercegroup.accounting.AccountingBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".commercegroup.accounting.AccountingGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".commercegroup.accounting.AccountingHandNoteActivity"
-            android:exported="false" />
-
-
-
-        <activity
-            android:name=".commercegroup.finance.FinanceBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".commercegroup.finance.FinanceGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".commercegroup.finance.FinanceHandNoteActivity"
-            android:exported="false" />
-
-
-        <activity
-            android:name=".commercegroup.business.BusinessBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".commercegroup.business.BusinessGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".commercegroup.business.BusinessHandNoteActivity"
-            android:exported="false" />
-
-
-        <activity
-            android:name=".artsgroup.civics.CivicsBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".artsgroup.civics.CivicsGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".artsgroup.civics.CivicsHandNoteActivity"
-            android:exported="false" />
-
-
-
-        <activity
-            android:name=".artsgroup.economics.EconomicsBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".artsgroup.economics.EconomicsGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".artsgroup.economics.EconomicsHandNoteActivity"
-            android:exported="false" />
-
-
-        <activity
-            android:name=".artsgroup.geography.GeographyBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".artsgroup.geography.GeographyGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".artsgroup.geography.GeographyHandNoteActivity"
-            android:exported="false" />
-
-
-        <activity
-            android:name=".artsgroup.history.HistoryBoardBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".artsgroup.history.HistoryGuideBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".artsgroup.history.HistoryHandNoteActivity"
-            android:exported="false" />
-
-
-
-        <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <!-- Main Activities -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- Bangla Sahitto Activities -->
+        <activity
+            android:name=".AllSubjectActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- AdMob Metadata -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_application_id" />
     </application>
-
 </manifest>

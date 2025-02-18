@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ruksana.model.Model_Firestore_Database;
-import com.ruksana.sscboardbookandguide.DetailsForQbankActivity;
+import com.ruksana.sscboardbookandguide.DetailsActivity;
 import com.ruksana.sscboardbookandguide.R;
 
 import java.util.ArrayList;
@@ -46,7 +46,7 @@ public class adapter extends RecyclerView.Adapter<adapter.myviewholder> {
 
 
                 // Create an intent to start the PostActivity
-                Intent intent = new Intent(v.getContext(), DetailsForQbankActivity.class);
+                Intent intent = new Intent(v.getContext(), DetailsActivity.class);
                 intent.putExtra("title", datalist.get(position).getName());
                 intent.putExtra("pageNumber", datalist.get(position).getPage());
                 intent.putExtra("data", datalist.get(position).getData());
@@ -65,12 +65,12 @@ public class adapter extends RecyclerView.Adapter<adapter.myviewholder> {
     class myviewholder extends RecyclerView.ViewHolder {
         LinearLayout mlayout;
         TextView name;
-        ImageView watchNowBtn;
+//        ImageView watchNowBtn;
 
         public myviewholder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.sample_nameId);
-            watchNowBtn = itemView.findViewById(R.id.watchNowButtonId);
+//            watchNowBtn = itemView.findViewById(R.id.watchNowButtonId);
             mlayout = itemView.findViewById(R.id.sample_mainLinearId);
 
         }

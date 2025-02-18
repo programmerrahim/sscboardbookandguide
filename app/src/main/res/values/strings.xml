@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SSC Board Book And Guide</string>
+    <string name="app_name">SSC All Subject</string>
     <string name="hand_note">হ্যান্ড নোট</string>
     <string name="guide_book">গাইড বই</string>
     <string name="board_book">বোর্ড বই</string>
@@ -29,6 +29,12 @@
     <string name="history">বাংলাদেশের ইতিহাস ও বিশ্বসভ্যতা</string>
     <string name="p">B</string>
     <string name="b">B</string>
+    <string name="e">E</string>
+    <string name="splash_slogan">নবম - দশম শ্রেণী ও এস,এস,সি পরীক্ষার্থীদের জন্য পূর্ণাঙ্গ প্রস্তুতিমূলক অ্যাপ</string>
+
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
 
 
     <!--Admob test id-->
