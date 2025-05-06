@@ -36,7 +36,7 @@
 
 
             <TextView
-                android:id="@+id/sample_nameId"
+                android:id="@+id/sample_name_videoId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -62,9 +62,9 @@
 
 
             <ImageView
-                android:src="@drawable/right_arrow_for_sample"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:src="@drawable/play_arrow"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:layout_margin="4dp"
                 />
 

@@ -21,34 +21,50 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
 
-        <!-- Splash Activity (Launcher) -->
         <activity
-            android:name=".SplashActivity"
+            android:name="com.ruksana.view.NoticeActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.ruksana.view.NoticeDetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.ruksana.view.PdfDetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.ruksana.view.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ruksana.view.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ruksana.view.PracticeActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.ruksana.view.PdfActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.ruksana.view.VideoActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.ruksana.view.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- Main Activities -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailsActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-
-
-        <!-- Bangla Sahitto Activities -->
-        <activity
-            android:name=".AllSubjectActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-
-
-        <!-- AdMob Metadata -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_application_id" />

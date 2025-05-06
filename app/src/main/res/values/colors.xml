@@ -5,15 +5,36 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="coloreTransparent">#00000000</color>
-    <color name="colorPrimary">#165118</color>
-    <color name="colorPrimaryDark">#0C7481</color>
+    <color name="colorPrimary">#088F8F</color>
+    <color name="colorPrimaryDark">#2298A6</color>
     <color name="colorBackground">@color/material_dynamic_neutral80</color>
 
     <color name="colorAccent">#EC0F5A</color>
 
-    <color name="off_white">#FAF9F6</color>
+    <color name="off_white">#FCFCFC</color>
     <color name="off_green">#EEF9F6</color>
 
     <color name="coloreWhite">#FFFFFF</color>
     <color name="blue">#2196F3</color>
+    <color name="splash_background">@color/off_green</color>
+
+
+    <color name="gray">#808080</color>
+
+    <!-- Additional colors -->
+    <color name="grey_700">#616161</color>
+
+    <color name="light_green">#EEF9F6</color> <!-- Light green for correct -->
+    <color name="light_red">#FFF5F8</color>   <!-- Light red for incorrect -->
+
+    <color name="dialog_background">#D5D6D6</color> <!-- Background color -->
+    <color name="dialog_title_text">#1E1B1B</color> <!-- Title text color -->
+    <color name="dialog_message_text">#000000</color> <!-- Message text color -->
+    <color name="positive_button_color">#0B3D0D</color> <!-- Positive button color -->
+    <color name="negative_button_color">#F44336</color> <!-- Negative button color -->
+
+    <color name="ripple_light">#1F000000</color>
+
+
+
 </resources>

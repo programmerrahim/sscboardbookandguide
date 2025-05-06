@@ -1,4 +1,4 @@
-package com.ruksana.sscboardbookandguide;
+package com.ruksana.view;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -15,13 +15,14 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.ruksana.adapter.adapterForNotice;
 
-import com.ruksana.adapter.adapter;
-import com.ruksana.model.Model_Firestore_Database;
+import com.ruksana.model.modelForNotice;
+import com.ruksana.sscboardbookandguide.R;
 
 import java.util.ArrayList;
 
-public class AllSubjectActivity extends AppCompatActivity {
+public class NoticeActivity extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
 
@@ -29,56 +30,56 @@ public class AllSubjectActivity extends AppCompatActivity {
 
     RecyclerView recview;
 
-    ArrayList<Model_Firestore_Database> datalist;
+    ArrayList<modelForNotice> datalist;
     FirebaseFirestore db;
 
-    adapter adapter;
+    adapterForNotice madapter;
 
     String button_name;
-    String category;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_all_subject);
+        setContentView(R.layout.activity_practice);
 
 
         FirebaseApp.initializeApp(this);
-
 
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading please wait...");
         progressDialog.show();
 
-        button_name = getIntent().getStringExtra("BUTTON_NAME");
-        category = getIntent().getStringExtra("CATEGORY");
-
 
         //int action bar
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
-        actionBar.setTitle(button_name);
+
 
 
         //add back button
         assert actionBar != null;
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle("Notifications");
 
 
         recview = findViewById(R.id.recview);
-        recview.setLayoutManager(new LinearLayoutManager(AllSubjectActivity.this));
+        recview.setLayoutManager(new LinearLayoutManager(NoticeActivity.this));
 
         db = FirebaseFirestore.getInstance();
 
         datalist = new ArrayList<>();
 
-        adapter = new adapter(datalist);
+//        madapter = new adapter(datalist);
+
+//        madapter = new adapterForNotice(datalist);
+
+        madapter = new adapterForNotice(datalist);
 
 
-        recview.setAdapter(adapter);
+        recview.setAdapter(madapter);
 
 
         datalist.clear();
@@ -93,40 +94,27 @@ public class AllSubjectActivity extends AppCompatActivity {
 
             swipeRefreshLayout.setRefreshing(false);
         });
+
     }
-
-    //onCreate End
-
-
-
-
 
     private void loadData() {
         db = FirebaseFirestore.getInstance();
-        db.collection("Data")
-                .document("board_book")
-                .collection("item")
-                .orderBy("category", Query.Direction.ASCENDING)
-                .whereEqualTo("category",category)
+        db.collection("notice")
+                .orderBy("category", Query.Direction.DESCENDING)
+                .whereEqualTo("category", "notice")
                 .get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                         ArrayList<DocumentSnapshot> list = (ArrayList<DocumentSnapshot>) queryDocumentSnapshots.getDocuments();
                         for (DocumentSnapshot d : list) {
-                            Model_Firestore_Database obj = d.toObject(Model_Firestore_Database.class);
+                            modelForNotice obj = d.toObject(modelForNotice.class);
                             datalist.add(obj);
                         }
-                        adapter.notifyDataSetChanged();
+                        madapter.notifyDataSetChanged();
                         progressDialog.dismiss();
                     }
                 });
-    }
-
-
-    //actionbar
-    private void actionBar() {
-
     }
 
 

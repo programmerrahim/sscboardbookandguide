@@ -7,7 +7,7 @@
 
     <!-- Toggle Button -->
     <LinearLayout
-        android:id="@+id/english_toggle_button"
+        android:id="@+id/general_knowledge_toggle_button"
         android:layout_width="match_parent"
         android:layout_height="@dimen/toggle_button_height"
         android:background="@drawable/gradient_background"
@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/english"
+                android:text="@string/general_knowledge"
                 android:textColor="@color/white"
                 android:textSize="@dimen/medium_text_size" />
         </LinearLayout>
@@ -38,7 +38,7 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/english_toggle_icon"
+                android:id="@+id/general_knowledge_toggle_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
                 android:src="@drawable/right_arrow" />
@@ -47,7 +47,7 @@
 
     <!-- Collapsible View -->
     <LinearLayout
-        android:id="@+id/english_collapsible_view"
+        android:id="@+id/general_knowledge_collapsible_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -60,7 +60,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/english_id"
+                android:id="@+id/general_knowledge_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/button_margin"
@@ -101,7 +101,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/english_pdf_id"
+                android:id="@+id/general_knowledge_pdf_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/button_margin"
@@ -142,7 +142,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/english_video_id"
+                android:id="@+id/general_Knowledge_video_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/button_margin"

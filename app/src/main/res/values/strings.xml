@@ -1,46 +1,33 @@
 <resources>
-    <string name="app_name">SSC All Subject</string>
-    <string name="hand_note">হ্যান্ড নোট</string>
-    <string name="guide_book">গাইড বই</string>
-    <string name="board_book">বোর্ড বই</string>
-    <string name="sahitto">বাংলা সাহিত্য</string>
-    <string name="sohopath">বাংলা সহপাঠ</string>
-    <string name="bakoron">বাংলা ভাষার ব্যাকরণ ও নির্মিতি</string>
-    <string name="english">English For Today</string>
-    <string name="grammar">English Grammar and Composition</string>
-    <string name="math">গণিত</string>
-    <string name="ict">তথ্য ও যোগাযোগ প্রযুক্তি</string>
-    <string name="islam">ইসলাম শিক্ষা</string>
-    <string name="hindu">হিন্দুধর্ম শিক্ষা</string>
-    <string name="science_div">বিজ্ঞান বিভাগ</string>
-    <string name="commerce_div">ব্যবসায় শিক্ষা বিভাগ</string>
-    <string name="arts_div">মানবিক বিভাগ</string>
-    <string name="science">বিজ্ঞান</string>
-    <string name="physics">পদার্থ বিজ্ঞান</string>
-    <string name="civics">পৌরনীতি ও নাগরিকতা</string>
-    <string name="accounting">হিসাববিজ্ঞান</string>
-    <string name="finance">ফিন্যান্স ও ব্যাংকিং</string>
-    <string name="business">ব্যবসায় উদ্যোগ</string>
-    <string name="chemistry">রসায়ন</string>
-    <string name="economics">অর্থনীতি</string>
-    <string name="biology">জীববিজ্ঞান</string>
-    <string name="geography">ভূগোল ও পরিবেশ</string>
-    <string name="hmath">উচ্চতর গণিত</string>
-    <string name="history">বাংলাদেশের ইতিহাস ও বিশ্বসভ্যতা</string>
-    <string name="p">B</string>
-    <string name="b">B</string>
-    <string name="e">E</string>
-    <string name="splash_slogan">নবম - দশম শ্রেণী ও এস,এস,সি পরীক্ষার্থীদের জন্য পূর্ণাঙ্গ প্রস্তুতিমূলক অ্যাপ</string>
-
-
-    <string name="navigation_drawer_open">Open</string>
-    <string name="navigation_drawer_close">Close</string>
-
+    <string name="app_name">জব প্রস্তুতি</string>
+    <string name="splash_slogan">প্রতিদিন নতুন নতুন তথ্য অ্যাপ এ যোগ করা হয়</string>
 
     <!--Admob test id-->
     <string name="admob_application_id">ca-app-pub-3940256099942544~3347511713</string>
 
-    <!--Admob real id-->
-    <!--    <string name="admob_application_id">#</string>-->
+
+    <string name="model_test">মডেল টেস্ট</string>
+    <string name="practice">অনুশীলন</string>
+    <string name="question_bank">প্রশ্ন ব্যাংক</string>
+    <string name="primary">প্রাইমারি প্রস্তুতি</string>
+    <string name="p">P</string>
+    <string name="b">B</string>
+
+    <string name="image_description">image_description</string>
+    <string name="exit_icon_description">exit_icon_description</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="vertical_title">Vertical Title</string>
+
+    <string name="watch_video">ভিডিও দেখুন</string>
+    <string name="read_pdf">পিডিএফ পড়ুন</string>
+    <string name="excercise">অনুশীলন করুন</string>
+    <string name="current_affairs">কারেন্ট অ্যাফেয়ার্স</string>
+    <string name="english">English</string>
+    <string name="math">গণিত</string>
+    <string name="general_knowledge">সাধারণ জ্ঞান</string>
+    <string name="bangla">বাংলা</string>
+    <string name="back_button_description">floating_description</string>
 
 </resources>

@@ -6,29 +6,43 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.ruksana.view.MainActivity">
 
     <!-- Main Content -->
-    <LinearLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/off_green">
 
-        <!-- Toolbar -->
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <!-- AppBarLayout for Toolbar -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <!-- Scrollable Content -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:elevation="4dp"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- Main Content Container -->
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -37,101 +51,86 @@
                 android:orientation="vertical"
                 android:padding="@dimen/default_padding">
 
-                <!-- Bangla Sahitto Section -->
+                <!-- Current Affair Section -->
                 <include
-                    layout="@layout/section_bangla_sahitto"
+                    layout="@layout/section_current_affairs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/section_margin" />
 
-                <!-- Sohopath Section -->
+                <!-- bangla Section -->
                 <include
-                    layout="@layout/section_sohopath"
+                    layout="@layout/section_bangla"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/section_margin" />
 
-                <!-- Bakoron Section -->
+                <!-- english Section -->
                 <include
-                    layout="@layout/section_bakoron"
+                    layout="@layout/section_english"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/section_margin" />
 
-<!--                &lt;!&ndash; English Section &ndash;&gt;-->
-<!--                <include-->
-<!--                    layout="@layout/section_english"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="@dimen/section_margin" />-->
+                <!-- math Section -->
+                <include
+                    layout="@layout/section_math"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/section_margin" />
 
-<!--                &lt;!&ndash; Grammar Section &ndash;&gt;-->
-<!--                <include-->
-<!--                    layout="@layout/section_grammar"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="@dimen/section_margin" />-->
-
-<!--                &lt;!&ndash; Math Section &ndash;&gt;-->
-<!--                <include-->
-<!--                    layout="@layout/section_math"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="@dimen/section_margin" />-->
-
-<!--                &lt;!&ndash; ICT Section &ndash;&gt;-->
-<!--                <include-->
-<!--                    layout="@layout/section_ict"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="@dimen/section_margin" />-->
-
-<!--                &lt;!&ndash; Islam Section &ndash;&gt;-->
-<!--                <include-->
-<!--                    layout="@layout/section_islam"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="@dimen/section_margin" />-->
-
-<!--                &lt;!&ndash; Hindu Section &ndash;&gt;-->
-<!--                <include-->
-<!--                    layout="@layout/section_hindu"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="@dimen/section_margin" />-->
-
-<!--                &lt;!&ndash; Science Div Section &ndash;&gt;-->
-<!--                <include-->
-<!--                    layout="@layout/section_science_div"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="@dimen/section_margin" />-->
-
-<!--                &lt;!&ndash; Commerce Div Section &ndash;&gt;-->
-<!--                <include-->
-<!--                    layout="@layout/section_commerce_div"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="@dimen/section_margin" />-->
-
-<!--                &lt;!&ndash; Arts Div Section &ndash;&gt;-->
-<!--                <include-->
-<!--                    layout="@layout/section_arts_div"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="@dimen/section_margin" />-->
+                <!-- general Knowledge Section -->
+                <include
+                    layout="@layout/section_general_knowledge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/section_margin" />
+            </LinearLayout>
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
-    </LinearLayout>
+
+        <!-- Loading Indicator -->
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminate="true"
+            style="@style/Widget.AppCompat.ProgressBar"/>
+
+
+        <!-- Floating Action Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_bottom_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/telegram"
+            android:scaleType="centerInside"
+            app:backgroundTint="#40C4FF"
+            app:tint="@null"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:rippleColor="@color/ripple_light"
+            app:shapeAppearanceOverlay="@style/FabRounded" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <!-- Navigation Drawer -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:background="@color/off_green"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu" />
+        app:menu="@menu/nav_menu"
+        app:itemIconTint="?attr/colorPrimary"
+        app:itemTextColor="?attr/colorPrimary"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

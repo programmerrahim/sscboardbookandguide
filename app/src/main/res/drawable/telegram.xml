@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- White Circle Background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,12m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" />
+
+    <!-- Blue Paper Airplane with -30-degree rotation and smaller size -->
+    <group
+        android:rotation="-30"
+        android:pivotX="12"
+        android:pivotY="12"
+        android:scaleX="0.5"
+        android:scaleY="0.5">
+        <path
+            android:fillColor="#40C4FF"
+            android:pathData="M2.01,21L23,12 2.01,3 2,10l15,2 -15,2z" />
+    </group>
+</vector>

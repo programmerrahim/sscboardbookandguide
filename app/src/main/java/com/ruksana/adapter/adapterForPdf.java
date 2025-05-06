@@ -11,17 +11,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ruksana.model.Model_For_practice;
+import com.ruksana.model.Model_For_Pdf;
 import com.ruksana.sscboardbookandguide.R;
-import com.ruksana.view.DetailsActivity;
+import com.ruksana.view.PdfDetailsActivity;
 
 import java.util.ArrayList;
 
 
-public class adapter extends RecyclerView.Adapter<adapter.myviewholder> {
-    ArrayList<Model_For_practice> datalist;
+public class adapterForPdf extends RecyclerView.Adapter<adapterForPdf.myviewholder> {
+    ArrayList<Model_For_Pdf> datalist;
 
-    public adapter(ArrayList<Model_For_practice> datalist) {
+    public adapterForPdf(ArrayList<Model_For_Pdf> datalist) {
         this.datalist = datalist;
     }
 
@@ -42,9 +42,9 @@ public class adapter extends RecyclerView.Adapter<adapter.myviewholder> {
             public void onClick(View v) {
 
                 // Create an intent to start the PostActivity
-                Intent intent = new Intent(v.getContext(), DetailsActivity.class);
-                intent.putExtra("categoryQ", datalist.get(position).getCategoryQ());
+                Intent intent = new Intent(v.getContext(), PdfDetailsActivity.class);
                 intent.putExtra("name", datalist.get(position).getName());
+                intent.putExtra("data", datalist.get(position).getData());
                 v.getContext().startActivity(intent);
 
             }

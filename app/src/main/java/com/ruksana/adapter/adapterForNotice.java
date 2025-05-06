@@ -11,17 +11,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ruksana.model.Model_For_practice;
+import com.ruksana.model.modelForNotice;
 import com.ruksana.sscboardbookandguide.R;
-import com.ruksana.view.DetailsActivity;
+import com.ruksana.view.NoticeDetailsActivity;
 
 import java.util.ArrayList;
 
 
-public class adapter extends RecyclerView.Adapter<adapter.myviewholder> {
-    ArrayList<Model_For_practice> datalist;
+public class adapterForNotice extends RecyclerView.Adapter<adapterForNotice.myviewholder> {
+    ArrayList<modelForNotice> datalist;
 
-    public adapter(ArrayList<Model_For_practice> datalist) {
+    public adapterForNotice(ArrayList<modelForNotice> datalist) {
         this.datalist = datalist;
     }
 
@@ -42,8 +42,8 @@ public class adapter extends RecyclerView.Adapter<adapter.myviewholder> {
             public void onClick(View v) {
 
                 // Create an intent to start the PostActivity
-                Intent intent = new Intent(v.getContext(), DetailsActivity.class);
-                intent.putExtra("categoryQ", datalist.get(position).getCategoryQ());
+                Intent intent = new Intent(v.getContext(), NoticeDetailsActivity.class);
+                intent.putExtra("data", datalist.get(position).getData());
                 intent.putExtra("name", datalist.get(position).getName());
                 v.getContext().startActivity(intent);
 
